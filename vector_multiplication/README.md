@@ -1,3 +1,8 @@
+#Hadoop-Streaming
+Hadoop streaming is a utility that comes with the Hadoop distribution. This utility allows you to create and run Map/Reduce jobs with any executable or script as the mapper and/or the reducer.
+
+#Execution of Vector_Multiplication Program.
+
 **step 1:** cd /home/samiksha/hadoop-2.7.3/vector_multiplication
 
 **Step2:** Generate a test-case
