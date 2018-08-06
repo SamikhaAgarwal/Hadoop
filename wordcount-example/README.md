@@ -3,8 +3,11 @@
 *these are the commands which is mentioned in the pdf* ->
 
 **Command:** hadoop fs -mkdir /home/samiksha/wordcount
+
 **Command:** hadoop fs -chown wordcount /home/samiksha/wordcount
+
 **Command:** hadoop fs -mkdir  /home/samiksha/wordcount /input
+
 **Command:** hadoop fs -mkdir  /home/samiksha/wordcount /output
 **Command:** hadoop fs -ls /home/samiksha/wordcount
 **Command:** hadoop fs -put /home/samiksha/hadoop-2.7.3/assingment1/sample\_text.txt /home/samiksha/wordcount /input
