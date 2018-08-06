@@ -26,4 +26,4 @@
 
 **Command:** `hadoop fs -rm -r /home/samiksha/wordcount/output`
 
-**Command:** `./stop-all.sh'
+**Command:** `./stop-all.sh`
