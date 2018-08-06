@@ -2,8 +2,9 @@
 
 *these are the commands which is mentioned in the pdf* ->
 
-Command: hadoop fs -mkdir /home/samiksha/wordcount
-Command: hadoop fs -chown wordcount /home/samiksha/wordcount
+**Command:** hadoop fs -mkdir /home/samiksha/wordcount
+
+**Command:** hadoop fs -chown wordcount /home/samiksha/wordcount
 Command: hadoop fs -mkdir  /home/samiksha/wordcount /input
 Command: hadoop fs -mkdir  /home/samiksha/wordcount /output
 Command: hadoop fs -ls /home/samiksha/wordcount
