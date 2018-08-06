@@ -1,6 +1,6 @@
-In wordcoun.pdf , there are steps and commands for run the wordcount example.
+**In wordcoun.pdf , there are steps and commands for run the wordcount example.**
 
-these are the commands which is mentioned in the pdf ->
+*these are the commands which is mentioned in the pdf* ->
 
 Command: hadoop fs -mkdir /home/samiksha/wordcount
 Command: hadoop fs -chown wordcount /home/samiksha/wordcount
