@@ -1,4 +1,4 @@
-**step 1:** cd /home/samiksha/hadoop-2.7.3/
+**step 1:** cd /home/samiksha/hadoop-2.7.3/vector_multiplication
 
 **Step2:** Generate a test-case
 `python3 generate.py 1.in 10 10 2`
@@ -38,7 +38,7 @@ Generates two matrices 10x10 and 10x2
 `hadoop fs -mkdir -p /home/samiksha/vector_mult/input`
 
 **step12:**
-`hadoop fs -put /home/samiksha/hadoop-2.7.3/sample.txt  /home/samiksha/vector_mult/input`
+`hadoop fs -put /home/samiksha/hadoop-2.7.3/vector_multiplication/sample.txt  /home/samiksha/vector_mult/input`
 
 # How it works
 Consider we want to multiply two matrices, M(m*n) and N(n*p). This results in a matrix like P(m*p).
@@ -55,7 +55,7 @@ most of the matrices in real-life are sparce matrices.
 
 
 **step13:** Testing with Apache Hadoop
-`hadoop jar /home/samiksha/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -file /home/samiksha/hadoop-2.7.3/mapper.py /home/samiksha/hadoop-2.7.3/reducer.py -mapper "python3 mapper.py" -reducer "python3 reducer.py" -input /home/samiksha/vector_mult/input/sample.txt -output /home/samiksha/vector_mult/output`
+`hadoop jar /home/samiksha/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -file /home/samiksha/hadoop-2.7.3/vector_multiplication/mapper.py /home/samiksha/hadoop-2.7.3/vector_multiplication/reducer.py -mapper "python3 mapper.py" -reducer "python3 reducer.py" -input /home/samiksha/vector_mult/input/sample.txt -output /home/samiksha/vector_mult/output`
  
 **step14:**
 `hadoop fs -cat /home/samiksha/vector_mult/output/*`
